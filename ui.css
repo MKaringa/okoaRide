@@ -69,6 +69,35 @@ a{
     z-index: -1;
     transition: all 0.3s ease;
 }
+.mybtn1:hover::before{
+    width: 100%;
+}
+.section-title .title{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    display: inline-block;
+    /* background-color: #8eeadf; */
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    z-index: 1;
+}
+.section-title .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: #8eeadf; */
+    z-index: 1;
+    border-radius: 4px;
+    opacity: 1;
+
+
+}
 
 
 /* header section */
