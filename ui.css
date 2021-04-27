@@ -1,143 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="uuii.css">
-    <link rel="stylesheet" href="ui.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
-    <!-- JavaScript Bundle with Popper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Okoa Ride</title>
+/* Global Style */
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    /* background-image: url(./images/services.png); */
+}
+a{
+    text-decoration: none!important;
+}
+.logo-circle{
+    height: 26px;
+    width: 26px;
+    border: 4px solid #1c3434;
+    display: inline-block;
+    margin-bottom: -2px;
+    border-radius: 50%;
+    position: relative;
 
-</head>
-<body>
-    <!-- Header section start -->
-    <header class="header fixed-top" >
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-light">
-                <!-- Brand -->
-                <a class="navbar-brand" href="#"> <span class="logo-circle"></span> Okoa Ride</a>
-              
-                <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                  <ul class="navbar-nav ml-auto" >
-                    <li class="nav-item">
-                      <a class="nav-link active"  href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                      </li>
-                  </ul>
-                </div>
-              </nav>
+}
+.logo-circle::before{
+    content: '';
+    height: 8px;
+    width: 8px;
+    background-color: #1c3434;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -4px;
+    margin-top: -4px;
 
-        </div>
+}
+.mybtn1{
+    background-color: #1c3434;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 12px 36px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.mybtn1:focus{
+    box-shadow: none;
 
-    </header>
-    <!-- Header section end -->
-
-    <!-- Home Section start -->
-    <section class="home-section">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="home-content">
-                        <h1>Get your Car Serviced from anywhere</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa temporibus earum fuga, nesciunt dolore excepturi unde repellendus architecto? Delectus ipsum doloribus impedit quia! Sunt enim ea molestiae labore. Delectus.</p>
-                        <a href="#" class="btn mybtn1">State your issue</a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="home-img">
-                        <img src="./images/services.png" alt="services">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Home Section end -->
-    <!-- About section start -->
-    <section class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 d-flex" >
-                    <div class="about-img">
-                        <img class="img-fluid" src="./images/aboutt.png" alt="about">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- About section end-->
-    <!-- services section start -->
-    <section class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-g-6">
-                    <div class="services-image">
-                        <img src="./images/srvsofrd.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- services section end -->
-
-    <!-- testimonials section start-->
-    <section class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-g-6">
-                    <div class="">
-                        <img src="" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
+}
+.mybtn1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    background-color: rgba(0,0,0,0.2);
+    height: 100%;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
 
 
-     <!-- testimonials section end -->
-     <!-- contact us start-->
-     <section class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-g-6">
-                    <div class="services-image">
-                        <img src="./images/contactus.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+/* header section */
+.header{
+    border-bottom: 1px solid rgba(255,255,255,0);
+}
+.header .navbar {
+    padding: 0;
+}
+.header .navbar.navbar-light.navbar-brand{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1c3434;
 
-    </section>
-     
-     <!-- contact us end-->
-</body>
-</html>
+}
+.header .navbar #collapsibleNavbar .nav-item .nav-link{
+    color: #1c3434;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 20px 15px 20px ;
+    line-height: 26px;
+    opacity: 0.6;
+
+}
+.header .navbar #collapsibleNavbar .nav-item .nav-link.active{
+    opacity: 1;
+}
+/* home section */
+.home-section{
+    background-color: #8eeadf;
+    padding: 250px 0 200px;
+
+}
+.home-section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.home-section .home-content h1{
+    font-size: 55px;
+    color: #1c3434;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+}
+
+.home-section .home-content p{
+    color: #1c3434;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 28px;
+    
+}
+.home-section .home-img{
+    position: relative;
+}
+.home-section .home-img img{
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    left: 150px;
+    top: -50px;
+    animation: productani01 5s linear infinite;
+
+}
+
+@keyframes productani01{
+    0%,100%{
+        transform: translateY(15px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+}
+/* about-section */
+.about-section{
+    background-color: #ffff;
+    padding: 80px 0 80px;
+}
+
+.about-section .about-img{
+    margin: auto;
+}
+.about-section .about-img img{
+    max-width: 350px;
+    width: 100%;
+
+}
