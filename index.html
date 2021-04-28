@@ -7,6 +7,44 @@
     <title>Okoa Ride</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>List of Mechanics</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="./images/profile1.jpeg" alt="profile image">
+            </div>
+            <div class="desc">
+                let desc = document.getElementbyId(mechanic01);
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <form id="userEntry">
+            <div class="form-group">
+              <label for="name">Enter you full names</label>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Enter your fullname" aria-describedby="helpId">
+             
+            </div>
+            <div class="form-group">
+              <label for="email">Enter your email address</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email address" aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+                <label for="number">Enter your mobile phone number</label>
+                <input type="number" name="number" id="contact" class="form-control" placeholder="Enter your mobile number" aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+                <label for="technicalIssue">Tell us what issue you're facing</label>
+                <input type="text" name="technicalIssue" id="technical-issue" class="form-control" placeholder="Explain in few words the problem you're experiencing with your vehicle" aria-describedby="helpId">
+            </div>
+        </form>
+        <button type="submit" class="btn btn-warning">Submit request</button>
+        <div class="alert">
+            <p id="alert"></p>
+        </div>
+            
+        </div>
+    </div>
 </body>
 </html>
