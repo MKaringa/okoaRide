@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Google font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
@@ -302,4 +303,15 @@ a{
         left: 25%;
         margin-top: 10px;
 
+=======
+.section-title .title::before,
+.home-section,
+.header{
+    background-color: #1ea494;
+}
+.section-title .title
+.mybtn1:hover,
+.mybtn1{
+    color: #1ea494;
+>>>>>>> 6fb79207f586a799970fc3865b7b611a0ed0e3af
 }
