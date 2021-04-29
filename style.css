@@ -306,9 +306,6 @@ a{
 .review{
     display: flex;
     justify-content: center;
-    width: 100%;
-    
-    
 }
 
 .section-title .title::before,
