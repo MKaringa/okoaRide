@@ -1,5 +1,6 @@
 $("form").hide();
-
+// $(".form-footer").hide();
+// $(".customer").hide();
 //Mechanic constructor
 function Mechanic(name, age, email, ratings) {
   this.name = name;
@@ -40,6 +41,8 @@ $(".miko").click(function () {
                           `<li>Rating: ${miko.ratings} </li>`);
       $(".miko").hide();
       $("form").show();
+
+      
   });
 
   $(".det-1").click(function functionName(){
@@ -94,9 +97,14 @@ $(".det-4").click(function (){
     $("form").hide();
    });
 
+
+//form-jquery
    $(document).ready(function (){
     $("form").submit(function (e){
         e.preventDefault();
+        
      
     });
    });
+
+   //getting user-data and storing it

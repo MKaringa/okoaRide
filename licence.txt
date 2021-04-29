@@ -1,0 +1,16 @@
+  <div class="form-group mt-2">
+            <label for="comment">leave a comment:</label>
+            <input class="form-control" rows="5" id="comment"></input>
+          </div>
+
+
+
+let clientData = {
+  clietName = document.getElementById("fullname").value,
+  clintEmail = document.getElementById("email").value,
+  clientLocation = document.getElementById("location").value,
+  clintCar = document.getElementsByClassName("custom-select").value,
+  carIssue = document.getElementById("desc").value,
+};
+userInformation.push(clientData);
+document.querySelector("form").reset;

@@ -57,16 +57,16 @@
                 <a class="nav-link active" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#aboutUs">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonials</a>
+                <a class="nav-link" href="#testimonies">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#mechanics">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -89,6 +89,7 @@
                 Sunt enim ea molestiae labore. Delectus.
               </p>
               <a href="#form" class="btn mybtn1 mb-2">State your issue</a>
+              <div class="spinner-border bg-success"></div>
             </div>
           </div>
           <div class="col">
@@ -101,28 +102,33 @@
     </section>
     <hr />
     <div class="container">
-      <section class=""></section>
       <!-- ----------------------mechanics section ----------------------------------->
-      <section class="mech d-flex justify-content-between">
+      <section class="mech d-flex justify-content-between" id="mechanics">
         <div class="mech-1">
           <img src="./images/mech.jpg" alt="" class="img-responsive col-12" />
           <small class="det-1"></small>
           <div>
-            <button id="" class="btn btn-sm btn-success miko">Floice Nyota</button>
+            <button id="" class="btn btn-sm btn-success miko">
+              Floice Nyota
+            </button>
           </div>
         </div>
         <div class="mech-2">
           <img src="./images/mech.jpg" alt="" class="img-responsive col-12" />
           <small class="det-2"></small>
           <div>
-            <button id="john" class="btn btn-sm btn-success john">Mungai Karinga</button>
+            <button id="john" class="btn btn-sm btn-success john">
+              Mungai Karinga
+            </button>
           </div>
         </div>
         <div class="mech-3">
           <img src="./images/mech.jpg" alt="" class="img-responsive col-12" />
           <small class="det-3"></small>
           <div>
-            <button id="jack" class="btn btn-sm btn-success jack">Elvis Otieno</button>
+            <button id="jack" class="btn btn-sm btn-success jack">
+              Elvis Otieno
+            </button>
           </div>
         </div>
         <div class="mech-4">
@@ -136,72 +142,146 @@
         </div>
       </section>
       <!-- ----------------------form section ----------------------------------->
-      <form class="form mt-4">
-        <!-- customer enters fullnames -->
-        <div class="form-group">
-          <label for="fullnames">Full names</label>
-          <input
-            id="fullNames"
-            class="form-control w-50"
-            type="text"
-            placeholder="Enter your full names"
-          />
+      <section class="col-5 mt-2">
+        <form action="" class="border p-5 rounded bg-light">
+          <h2 class="form-text text-primary pb-4">Get in touch</h2>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                id="fullname"
+                placeholder="Enter full name"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input
+                type="email"
+                class="form-control text-primary"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Location</label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                id="location"
+                placeholder="Enter your location"
+                required
+              />
+            </div>
+          </div>
+          <select class="custom-select">
+            <option selected>Choose your car model</option>
+            <option id="suv" label="suv"></option>
+            <option id="sportsCar" label="sportscar"></option>
+            <option id="sedan" label="sedan"></option>
+            <option id="truck" label="truck"></option>
+            <option id="minivan" label="minivan"></option>
+            <option id="coupe" label="coupe"></option>
+            <option id="hatchback" label="hatchback"></option>
+            <option id="crossOver" label="crossover"></option>
+          </select>
+          <div class="form-group mt-2" id="desc">
+            <label for="comment">Brief description of the problem:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+          <div class="form-group row">
+            <div class="offset-sm-2 col-sm-10 mt-1 text-right">
+              <button type="submit" class="btn btn-primary" id="submit">
+                Submit
+              </button>
+            </div>
+            <div class="border mt-2 bg-primary p-5 rounded form-footer">
+              <h2 class="success-text border-bottom">
+                Thank <br />
+                You.
+              </h2>
+              <br />
+              <h2 class="text-capitalize">we'll be in touch shortly</h2>
+            </div>
+          </div>
+        </form>
+      </section>
+      <!-- ------------------------------------------------reviews ----------------------------------- -->
+      <section class="customer">
+        <div class="font-italic text-center mb-2 mt-2 font-weight-bold">
+          Reviews
         </div>
-        <!-- customer enters email address -->
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input
-            id="email"
-            class="form-control w-50"
-            type="email"
-            placeholder="Enter your email..."
-          />
+        <div class="d-flex text-center flex-row-reverse">
+          <div class="customer-1 col-2">
+            <div class="text-center">
+              <img
+                src="./images/mekk.jpg"
+                class="col-8 rounded-circle"
+                alt=""
+              />
+            </div>
+            <div class="text-center font-weight-bold">Alex</div>
+            <small class="text-center font-italic">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              dolorem"</small
+            >
+          </div>
+          <div class="customer-2 col-2">
+            <div class="text-center">
+              <img
+                src="./images/mekk.jpg"
+                class="col-8 rounded-circle"
+                alt=""
+              />
+            </div>
+            <div class="text-center font-weight-bold">Alsace</div>
+            <small class="text-center font-italic">
+              "At quis similique aliquid ex velit mollitia architecto? Corporis
+              explicabo doloremque veniam non praesentium labore hic
+              quidem."</small
+            >
+          </div>
+          <div class="customer-3 col-2">
+            <div class="text-center">
+              <img
+                src="./images/mekk.jpg"
+                class="col-8 rounded-circle"
+                alt=""
+              />
+            </div>
+            <div class="text-center font-weight-bold">Alice</div>
+            <small class="text-center font-italic">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              dolorem enim vel architecto! At quis similique aliquid ex velit
+              mollitia."</small
+            >
+          </div>
+          <div class="customer-4 col-2">
+            <div class="text-center">
+              <img
+                src="./images/mekk.jpg"
+                class="col-8 rounded-circle"
+                alt=""
+              />
+            </div>
+            <div class="text-center font-weight-bold">Allan</div>
+            <small class="text-center font-italic">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              praesentium labore hic quidem."</small
+            >
+          </div>
         </div>
-        <!-- customer enters location -->
-        <div class="form-group">
-          <label for="location">Location</label>
-          <input id="location" class="form-control w-50" type="text" />
-        </div>
-        <!-- customer enters type of the car -->
-        <label for="">Type of car</label>
-        <select class="form-control w-50" id="carType" required>
-          <option></option>
-          <option id="suv" label="suv">Sport Utility Vehicle</option>
-          <option id="sportsCar" label="sportscar">Sportscar</option>
-          <option id="sedan" label="sedan">sedan</option>
-          <option id="truck" label="truck">Truck</option>
-          <option id="minivan" label="minivan">Minivan</option>
-          <option id="coupe" label="coupe">Coupe</option>
-          <option id="hatchback" label="hatchback">Hatchback</option>
-          <option id="crossOver" label="CrossOver">Crossover</option>
-        </select>
-        <!-- customer enters type of the car -->
-        <label for="">Select Mechanic</label>
-        <select class="form-control w-50 mt-2 mb-4" id="mech" required>
-          <option></option>
-          <option id="floiceNyota">Floice Nyota</option>
-          <option id="mungaiKaringa">Mungai Karinga</option>
-          <option id="elvisOtieno">Elvis Otieno</option>
-          <option id="peterKiru">Peter Kiru</option>
-        </select>
-        <!-- customer enters the car problem-->
-        <textarea
-          name=""
-          id="faliure"
-          cols="30"
-          rows="10"
-          class="transparent-input"
-        >
-Brief description of your vehicle problem</textarea
-        >
-        <!-- submit button-->
-        <div class="buttn">
-          <button type="submit" class="btn btn-info">Submit</button>
-        </div>
-      </form>
+      </section>
+      <!-- mech review -->
       <div style="margin-top: 500px"></div>
     </div>
     <script src="main.js"></script>
   </body>
 </html>
-  
