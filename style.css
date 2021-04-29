@@ -303,6 +303,13 @@ a{
         left: 25%;
         margin-top: 10px;
 }
+.review{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
 
 .section-title .title::before,
 .home-section,
@@ -314,4 +321,13 @@ a{
 .mybtn1{
     color: #1ea494;
 
+}
+.iconss{
+    margin: 60px;
+
+}
+.footer text-center{
+    width: 100%;
+    
+    
 }
