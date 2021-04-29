@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* Google font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
@@ -302,8 +302,15 @@ a{
         position: relative;
         left: 25%;
         margin-top: 10px;
+}
+.review{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
 
-=======
 .section-title .title::before,
 .home-section,
 .header{
@@ -313,5 +320,14 @@ a{
 .mybtn1:hover,
 .mybtn1{
     color: #1ea494;
->>>>>>> 6fb79207f586a799970fc3865b7b611a0ed0e3af
+
+}
+.iconss{
+    margin: 60px;
+
+}
+.footer text-center{
+    width: 100%;
+    
+    
 }

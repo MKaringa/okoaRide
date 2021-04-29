@@ -1,4 +1,4 @@
-$("form").hide();
+// $("form").hide();
 
 //Mechanic constructor
 function Mechanic(name, age, email, ratings) {
