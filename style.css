@@ -268,6 +268,7 @@ html{
   .review{
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
   }
   .section-title .title::before,
   .home-section,
@@ -280,6 +281,22 @@ html{
     color: #1EA494;
   }
   .iconss{
+=======
+}
+
+.section-title .title::before,
+.home-section,
+.header{
+    background-color: #1ea494;
+}
+.section-title .title
+.mybtn1:hover,
+.mybtn1{
+    color: #1ea494;
+
+}
+.iconss{
+>>>>>>> 692dfe08229ed6f521d6350c7910d319ecf0d501
     margin: 60px;
   }
   .footer text-center{
