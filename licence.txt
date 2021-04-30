@@ -1,16 +1,7 @@
-  <div class="form-group mt-2">
-            <label for="comment">leave a comment:</label>
-            <input class="form-control" rows="5" id="comment"></input>
-          </div>
+Copyright 2021 Okoa Ride App
 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-let clientData = {
-  clietName = document.getElementById("fullname").value,
-  clintEmail = document.getElementById("email").value,
-  clientLocation = document.getElementById("location").value,
-  clintCar = document.getElementsByClassName("custom-select").value,
-  carIssue = document.getElementById("desc").value,
-};
-userInformation.push(clientData);
-document.querySelector("form").reset;
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -1,110 +1,120 @@
+$(".form-footer").hide();
 $("form").hide();
-// $(".form-footer").hide();
-// $(".customer").hide();
+
 //Mechanic constructor
-function Mechanic(name, age, email, ratings) {
+function Mechanic(name, email, phoneNumber, experience, ratings) {
   this.name = name;
-  this.age = age;
   this.email = email;
+  this.phoneNumber = phoneNumber;
+  this.experience = experience;
   this.ratings = ratings;
 }
 //the mechanics
-let miko = new Mechanic("Floice Nyota", 24, "miko@email.com", 4.3);
-let john = new Mechanic("Mungai Karinga", 23, "John@email.com", 4.3);
-let jack = new Mechanic("Elvis Otieno", 25, "jack@email.com", 4.4);
-let jonas = new Mechanic("Peter Kiru", 19, "JonasU@email.com", 4.1);
+let elvis = new Mechanic("Elvis Otieno", "elvis9@email.com", "071274444", 9, 4.3);
+let mungai = new Mechanic("Mungai Karinga", "mungai911@yahoo.com", "071273333", 11, 4.3);
+let floice = new Mechanic("Floice Nyota","floice11@email.com", "071272222",12 , 4.4);
+let kiru = new Mechanic("Peter Kiru",  "kiru900@gmail.com",  "071275555", 12,4.3);
 
 //showing mech details
-$(".miko").click(function () {
-  $(".det-1").show();
-});
 
-$(".john").click(function () {
-  $(".det-2").show();
-});
+//------------------//Elvis dets---------------------------------------------
+$(".elvis").click(function (){
+  $(".det-1").css("font-weight", "bolder");
+  $(".det-1").append(`<li>Name: ${elvis.name} </li>` +
+                      `<li> Email: <a href="">${elvis.email} </a></li>` +
+                      `<li>Phone Number: ${Number(elvis.phoneNumber)} </li>` +
+                      `<li>Experience: ${elvis.experience} years</li>` +
+                      `<li>Rating: ${elvis.ratings} </li>`
+);
+ $("form").toggle();
+//  $(".elvis").hide();
+ $(".det-1").click(function (){
+  $("form").toggle();
+  $(".det-1").toggle();
+  $(".elvis").show();
+ })
+})
+//------------------- //Mungai dets----------------------------------------------
+$(".mungai").click(function (){
+  $(".det-2").css("font-weight", "bolder");
+  $(".det-2").append(`<li>Name: ${mungai.name} </li>` +
+                      `<li> Email: <a href="">${mungai.email} </a></li>` +
+                      `<li>Phone Number: ${Number(mungai.phoneNumber)} </li>` +
+                      `<li>Experience: ${mungai.experience} years</li>` +
+                      `<li>Rating: ${mungai.ratings} </li>`
+);
+ $("form").toggle();
+//  $(".mungai").hide();
 
-$(".jack").click(function () {
-  $(".det-3").show();
-});
+ $(".det-2").click(function (){
+  $("form").toggle();
+  $(".det-2").toggle();
+  $(".mungai").show();
+ })
+})
 
-$(".jonas").click(function () {
-    $(".det-4").show();
-  });
+//------------------- //Floice dets----------------------------------------------
+$(".floice").click(function (){
+  $(".det-3").css("font-weight", "bolder");
+  $(".det-3").append(`<li>Name: ${floice.name} </li>` +
+                      `<li> Email: <a href="">${floice.email} </a></li>` +
+                      `<li>Phone Number: ${Number(floice.phoneNumber)} </li>` +
+                      `<li>Experience: ${floice.experience} years </li>` +
+                      `<li>Rating: ${floice.ratings} </li>`
+);
+ $("form").toggle();
+//  $(".mungai").hide();
 
+ $(".det-3").click(function (){
+  $("form").toggle();
+  $(".det-3").toggle();
+  $(".floice").show();
+ })
+})
 
-//------------------//miko dets---------------------------------------------
-$(".miko").click(function () {
-    $(".det-1").css("font-weight", "bolder");
-    $(".det-1").append(`<li>Name: ${miko.name} </li>`+
-                          `<li>Age: ${miko.age} </li>`+
-                          `<li> Email: <a href="">${miko.email} </a></li>`+
-                          `<li>Rating: ${miko.ratings} </li>`);
-      $(".miko").hide();
-      $("form").show();
-
-      
-  });
-
-  $(".det-1").click(function functionName(){
-    $(".det-1").hide()
-    $(".miko").show();
-    $("form").hide();
-   });
-//------------------- //john dets----------------------------------------------
-  $(".john").click(function () {
-    $(".det-2").css("font-weight", "bolder");
-    $(".det-2").append(`<li>Name: ${john.name} </li>`+
-                          `<li>Age: ${john.age} </li>`+
-                          `<li> Email: <a href="">${john.email} </a></li>`+
-                          `<li>Rating: ${john.ratings} </li>`);
-      $(".john").hide();
-      $("form").show();
-  });
-    $(".det-2").click(function functionName(){
-    $(".det-2").hide()
-     $(".john").show();
-     $("form").hide();
-});
-//------------------- //jack dets----------------------------------------------
-
-$(".jack").click(function () {
-    $(".det-3").css("font-weight", "bolder");
-    $(".det-3").append(`<li>Name: ${jack.name} </li>`+
-                          `<li>Age: ${jack.age} </li>`+
-                          `<li> Email: <a href="">${jack.email} </a></li>`+
-                          `<li>Rating: ${jack.ratings} </li>`);
-      $(".jack").hide();
-      $("form").show();
-  });
-  $(".det-3").click(function (){
-    $(".det-3").hide()
-    $(".jack").show();
-    $("form").hide();
-   });
-//------------------- //jonas dets----------------------------------------------
-$(".jonas").click(function () {
+//------------------- //Kiru dets----------------------------------------------
+$(".kiru").click(function (){
   $(".det-4").css("font-weight", "bolder");
-  $(".det-4").append(`<li>Name: ${jonas.name} </li>`+
-                        `<li>Age: ${jonas.age} </li>`+
-                        `<li> Email: <a href="">${jonas.email} </a></li>`+
-                        `<li>Rating: ${jonas.ratings} </li>`);
-    $(".jonas").hide();
-    $("form").show();
-});
-$(".det-4").click(function (){
-    $(".det-4").hide()
-    $(".jonas").show();
-    $("form").hide();
-   });
+  $(".det-4").append(`<li>Name: ${kiru.name} </li>` +
+                     `<li> Email: <a href="">${kiru.email} </a></li>` +
+                     `<li>Phone Number: ${Number(kiru.phoneNumber)} </li>` +
+                     `<li>Experience: ${kiru.experience} years</li>` +
+                     `<li>Rating: ${kiru.ratings} </li>`
+);
+ $("form").toggle();
+//  $(".mungai").hide();
 
+ $(".det-4").click(function (){
+  $(".form").toggle();
+  $(".det-4").toggle();
+  $(".floice").show();
+ })
+});
+
+$("input").click(function (){
+  $("input").addClass("input-style");
+ 
+})
 
 //form-jquery
-   $(document).ready(function (){
-    $("form").submit(function (e){
-        e.preventDefault();
-        
-     
-    });
-   });
+$(document).ready(function () {
+  $("form").submit(function (e) {
+    e.preventDefault();
+    $("#submit").click(function (){
+     //validating the form
 
-   //getting user-data and storing it
+
+      $(".form-footer").show(); 
+      $("form").hide()
+
+
+let userName = $("#fullname").val();
+let userMessage = $("#comment").val();
+let userLocation = $("#location").val();
+$(".user-name").html(userName);
+$(".user-message").html(userMessage);
+$(".user-location").html(userLocation);
+
+    })
+  });
+});
